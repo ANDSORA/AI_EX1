@@ -35,6 +35,11 @@ public class stateTuple {
         state = s; parentState = ps; actionIn = a; Ascore = as; Hscore = hs;
     }
 
+    /**
+     * overwrite the equals function, for the use of HashSet and HashMap
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -45,6 +50,10 @@ public class stateTuple {
         return false;
     }
 
+    /**
+     * a simple hashcode function, could be done better, for the use of HashSet and HashMap
+     * @return hashcode
+     */
     @Override
     public int hashCode() {
         //return stateObs.getAvatarType() + 10 * (int)stateObs.getGameScore() + 100 * ((int)stateObs.getAvatarPosition().x + 5000) + 10000 * ((int)stateObs.getAvatarPosition().y + 5000);

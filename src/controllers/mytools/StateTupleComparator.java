@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * Created by andsora on 3/17/17.
+ * for the use of PriorityQueue
  */
 public class StateTupleComparator implements Comparator<stateTuple> {
     @Override
